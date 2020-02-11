@@ -1,5 +1,6 @@
 package com.github.philippheuer.events4j.core.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.github.philippheuer.events4j.api.domain.IEvent;
 import com.github.philippheuer.events4j.api.service.IServiceMediator;
 import lombok.Data;
@@ -34,6 +35,7 @@ public abstract class Event implements IEvent {
     /**
      * Holds a reference to the ServiceMediator to access 3rd party services
      */
+    @JsonIgnore
     private IServiceMediator serviceMediator;
 
     /**

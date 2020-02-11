@@ -13,6 +13,8 @@ dependencies {
 
 	// Micrometer
 	compile group: 'io.micrometer', name: 'micrometer-core', version: '1.3.2'
+	
+	compile group: "com.fasterxml.jackson.core", name: "jackson-annotations", version: "2.9.7"
 }
 
 // Artifact Info
